@@ -22,7 +22,7 @@ module.exports = {
 		},
 		{
 			test: /\.(jpe?g|png)$/,
-			loader: 'file'
+			loader: 'file-loader'
 		}]
 	},
 	output: {
