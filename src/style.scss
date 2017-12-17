@@ -1,9 +1,24 @@
 /* src/style.scss */
 $bluegrey: #2B3A42;
 
+#app {
+	margin: 0 auto;
+	align: center;
+	text-align: center;
+	width: 80%;
+}
+
+img {
+	padding-left: 3.5em;
+	width: 500px;
+}
+
 p {
   padding: 20px;
-  background: $bluegrey;
-  color: #dedede;
+  width: 100px;
+  margin: 0px auto;
+  border: 2px dashed #ffd1dc;
+  // background: $bluegrey;
+  color: #000;
   text-shadow: 0 1px 1px rgba(#000, .5);
 }
