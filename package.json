@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p --config ./webpack/webpack.config.js && cp src/static/index.html dist/",
     "dev": "webpack-dev-server --config ./webpack/webpack.dev.config.js"
   },
   "author": "",
@@ -26,8 +27,10 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "css-loader": "^0.28.7",
+    "file-loader": "^1.1.6",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
+    "raw-loader": "^0.5.1",
     "style-loader": "^0.19.1"
   },
   "babel": {

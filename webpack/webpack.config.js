@@ -4,7 +4,7 @@ const parentDir = path.join(__dirname, '../');
 
 module.exports = {
 	entry: [
-		path.join(parentDir, 'index.js')
+		path.join(parentDir, 'src/index.js')
 	],
 	module: {
 		loaders: [{
@@ -19,14 +19,14 @@ module.exports = {
 				"css-loader",
 				"less-loader"
 			]
+		},
+		{
+			test: /\.(jpe?g|png)$/,
+			loader: 'file'
 		}]
 	},
 	output: {
 		path: parentDir + '/dist',
 		filename: 'bundle.js'
-	},
-	devServer: {
-		contentBase: parentDir,
-		historyApiFallback: true
 	}
 }
